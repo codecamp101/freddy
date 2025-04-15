@@ -134,23 +134,40 @@ output{
 
 #panel{
     opacity: 0;
+    color: #777;
     border-radius: 1em;
     height: 85%;
     /* border: 1px solid yellow; */
+    gap: 0.5em;
     background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: top;
+}
+#panel.bgi{
+    background-image: url("confetti.gif");
+
 }
 #start{
     height: 4em;
     width: 4em;
     /* border: 1px solid blue; */
     border-radius: 8px;
-    margin: 50.5em auto;
-    display: block;
+    /* margin: 50.5em auto;
+    display: block; */
     background-color: #333;
     border: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    position:absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 #start > div {
@@ -160,7 +177,22 @@ output{
     border-radius: 50%;
 }
 #flag{
-    height: 2em;
-    width: 4em;
     background-image: url(nigerian_flag.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    width: 2em;
+    height: 1em;
+}
+#username{
+    /* border: 1px solid #fff; */
+    font-size: 150%;
+}
+#age{
+    font-size: 400%;
+    margin: 2em 0;
+    position: relative;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #e35 70%, #333 0%);
+    background-clip: text;
 }

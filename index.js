@@ -42,3 +42,31 @@ fm.addEventListener('submit', (e) => {
     start.addEventListener('click',  () => {
         pan.classList.toggle('on');
     });
+    //this format a unix number into the human-readable data
+    const dob = new Date ('11/21/2013').getTime();//this format in Java script mm-yyy
+    pan.querySelector('#dob').textContent =Intl.DateTimeFormat('en', {dateStyle: 'full'}).format(dob);
+
+//FUNCTION
+//A function is a group of statements that does not run unless when called
+function calculator () {
+    console.log(2 + 4);
+    console.log(10 - 5);
+    console.log(10 / 5);
+    console.log(10 * 5);
+    console.log(5 % 3); //modulus (short form is mod); the remainder of
+    }
+    calculator();
+    function callConfetti() {
+   /* const t = "ninja";
+    const u = "ajnin";
+    console.log(t + u); //concatenation: join strings together
+    */
+   const d = new Date("02/04/2025").getDate();
+   const m = new Date("02/04/2025").getMonth();
+   const today = Date.now();
+   console.log(new Date(today).getDate())
+   if (new Date(today ).getDate() === d && new Date(today).getMonth()===m) {
+    pan.classList.add(bgi)
+   }
+    };
+    callConfetti();
