@@ -8,6 +8,7 @@
     user-select: none;
 }
 
+
 #banner{
     font-size: 300%;
     font-weight: 700;
@@ -18,14 +19,17 @@
    letter-spacing: -4px;
 }
 
+
 #banner > p::first-letter {
     color: #e35;
 }
+
 
 #body {
     height: 100vh;
     width: 100vw;
 }
+
 
 #word {
     padding: 1em 0;
@@ -37,6 +41,7 @@
     background-position: center;
 }
 
+
 .chevron{
     height: 5em;
     width: 5em;
@@ -46,9 +51,11 @@
     box-shadow: .5s;
 }
 
+
 .chevron.hover{
     box-shadow: 0px 3px 5px #ccc;
 }
+
 
 #forward{
     left: 4em;
@@ -57,12 +64,14 @@
     background-repeat: no-repeat;
 }
 
+
 #backward{
     right: 4em;
     background-image: url(chevron-forward-outline.svg);
     background-size: 2em;
     background-repeat: no-repeat;
 }
+
 
 .tile{
     font-weight: 700;
@@ -73,6 +82,7 @@
     border: 1px solid #03347511;
 }
 
+
 #bulb{
     /* border: 1px solid red; */
     height: 2em;
@@ -81,6 +91,7 @@
     background-image: url(bulb-outline.svg);
 }
 
+
 #txt{
     border: 1px wsolid red;
     font-size: 150%;
@@ -88,6 +99,7 @@
     font-family: monospace;
     
 }
+
 
 .hint{
      /* border:  1px solid red; */
@@ -99,6 +111,7 @@
     gap: 1em;
     background-size: 150%;
 }
+
     
 button{
         background: none;
@@ -109,6 +122,7 @@ button{
         width: 4em;
         /* border: 1px solid red; */
 }
+
     
 #action{
         display: flex;
@@ -117,12 +131,14 @@ button{
         gap: 5em 3em;
 }
 
+
 #hintBtn{
         background-image: url(help-circle-outline.svg);
         width: 4em;
         height: 4em;
         background-repeat: no-repeat;
 }
+
 
 #checkBtn{
         background: none;
@@ -133,6 +149,7 @@ button{
         border-radius: 2em;
         border: 1px solid red;
 }
+
 
 #checkBtn > i {
         height: 4em;
@@ -145,12 +162,14 @@ button{
         background-size: 30px;
 }
 
+
 #checkBtn > span {
         color: #fff;
         font-size: 150%;
         font-weight: 500;
         background-color: purple;
 }
+
 
 #cup > i {
         top: 0;
@@ -159,6 +178,7 @@ button{
         background-color: #fff;
         padding: .3 .5;
     }
+
 
 #id > i {
         background-image: url(trophy-outline.svg);
@@ -173,18 +193,23 @@ button{
         align-items: center;
 }
 
+
 #restartBtn{
         background-image: url(refresh-outline.svg);
         width: 4em;
         height: 4em;
         background-repeat: no-repeat;
 }
+
+
 #footer{
     background-color: #fff;
     position: sticky;
     top: 100%;
     padding: 2em;
 }
+
+
 @media (width <= 48opx){
     .tile {
         font-size: 100%;
@@ -194,31 +219,39 @@ button{
     height: 2em;
     width: 2em;
  }
+
  #word{
     position: static;
  }
+
  #backward {
     left: 0;
  }
+
  #action {
 border: 1px solid red;
 width: 100%;
 flex-wrap: wrap;
 justify-content: center;
  }
+
  #restartBtn, #hintBtn, #cup{
  background-size: 40%;
  height: 3em;
  width: 3em;
  }
+
  #CUP > i {
     height: 2.5em;
     width: 2.5em;
  }
+
  #checkBtn > span {
     letter-spacing: 0;
  }
+
  #checkBtn {
     padding-left: 1em;
  }
+ 
 }
