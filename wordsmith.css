@@ -102,6 +102,176 @@
 
 
 .hint{
+    /* border:  1px solid red; */
+    /* border:  1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+    background-size: 150%;
+}
+
+
+button{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+        /* height: 4em;
+        width: 4em; */
+        /* border: 1px solid red; */
+    }
+    
+    
+    #action{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5em 3em;
+    }
+    
+    
+    #hintBtn{
+        background-image: url(help-circle-outline.svg);
+        width: 4em;
+        height: 4em;
+        background-repeat: no-repeat;
+    }
+    
+    
+    #checkBtn{
+        background: none;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        background-color: purple;
+        border-radius: 2em;
+        padding-left: 1em;
+    }
+    
+    
+    #checkBtn > i {
+        height: 4em;
+        width: 4em;
+        /* border: 1px solid red; */
+        padding-left: 2em;
+        background-image: url(arrow-forward-outline.svg);
+        /* border-radius: 5px; */
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center;
+    }
+    #checkBtn:hover{
+        box-shadow: 0px 3px 5px #ccc;
+    }
+    
+    
+#checkBtn > span {
+    color: #fff;
+    font-size: 110%;
+    font-weight: 500;
+}
+#cup {
+        background-image: url(trophy-outline.svg);
+    
+}
+
+
+#banner{
+    font-size: 300%;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+   letter-spacing: -4px;
+}
+
+
+#banner > p::first-letter {
+    color: #e35;
+}
+
+
+#body {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+#word {
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    background-position: center;
+}
+
+
+.chevron{
+    height: 5em;
+    width: 5em;
+    position: absolute;
+    translate: translateY(-50%);
+    border-radius: 7px;
+    box-shadow: .5s;
+}
+
+
+.chevron.hover{
+    box-shadow: 0px 3px 5px #ccc;
+}
+
+
+#forward{
+    left: 4em;
+    background-image:url(chevron-back-outline\ \(1\).svg);
+    background-size: 2em;
+    background-repeat: no-repeat;
+}
+
+
+#backward{
+    right: 4em;
+    background-image: url(chevron-forward-outline.svg);
+    background-size: 2em;
+    background-repeat: no-repeat;
+}
+
+
+.tile{
+    font-weight: 700;
+    font-size: 400%;
+    border-radius: 7px;
+    padding: .5em;
+    font-family: monospace;
+    border: 1px solid #03347511;
+}
+
+
+#bulb{
+    /* border: 1px solid red; */
+    height: 2em;
+    width: 2em;
+    background-repeat: no-repeat;
+    background-image: url(bulb-outline.svg);
+}
+
+
+#txt{
+    border: 1px wsolid red;
+    font-size: 150%;
+    font-weight: 500;
+    font-family: monospace;
+    
+}
+
+
+.hint{
      /* border:  1px solid red; */
     /* border:  1px solid red; */
     display: flex;
@@ -118,8 +288,8 @@ button{
         outline: none;
         border: none;
         cursor: pointer;
-        height: 4em;
-        width: 4em;
+        /* height: 4em;
+        width: 4em; */
         /* border: 1px solid red; */
 }
 
@@ -146,28 +316,32 @@ button{
         outline: none;
         display: flex;
         align-items: center;
+        background-color: purple;
         border-radius: 2em;
-        border: 1px solid red;
+        padding-left: 1em;
 }
 
 
 #checkBtn > i {
         height: 4em;
-        width: 2em;
-        border: 1px solid red;
+        width: 4em;
+        /* border: 1px solid red; */
         padding-left: 2em;
         background-image: url(arrow-forward-outline.svg);
-        border-radius: 5px;
+        /* border-radius: 5px; */
         background-repeat: no-repeat;
         background-size: 30px;
+        background-position: center;
+}
+#checkBtn:hover{
+    box-shadow: 0px 3px 5px #ccc;
 }
 
 
 #checkBtn > span {
         color: #fff;
-        font-size: 150%;
+        font-size: 110%;
         font-weight: 500;
-        background-color: purple;
 }
 
 
@@ -177,6 +351,92 @@ button{
         border-radius: 5px;
         background-color: #fff;
         padding: .3 .5;
+    }
+
+
+#id > i {
+        background-size: .5rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+#restartBtn{
+        background-image: url(refresh-outline.svg);
+        width: 4em;
+        height: 4em;
+        background-repeat: no-repeat;
+}
+
+
+#footer{
+    background-color: #fff;
+    position: sticky;
+    top: 100%;
+    padding: 2em;
+}
+
+
+@media (width <= 480px){
+    .tile {
+        font-size: 100%;
+    }
+    #forward, #backward{
+    background-size: 30%;
+    height: 2em;
+    width: 2em;
+ }
+
+ #word{
+    position: static;
+ }
+
+ #backward {
+    left: 0;
+ }
+
+ #action {
+border: 1px solid red;
+width: 100%;
+flex-wrap: wrap;
+justify-content: center;
+ }
+
+ #restartBtn, #hintBtn, #cup{
+ background-size: 40%;
+ height: 3em;
+ width: 3em;
+ }
+
+ #CUP > i {
+    height: 2.5em;
+    width: 2.5em;
+ }
+
+ #checkBtn > span {
+    letter-spacing: 0;
+ }
+
+ #checkBtn {
+    padding-left: 1em;
+ }
+ 
+
+    
+    
+    #cup > i {
+        top: 0;
+        right: 0;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: .3 .5;
+        background-image: url(trophy-outline.svg);
     }
 
 
@@ -208,9 +468,10 @@ button{
     top: 100%;
     padding: 2em;
 }
+}
 
 
-@media (width <= 48opx){
+@media (width <= 480px){
     .tile {
         font-size: 100%;
     }
